@@ -48,6 +48,9 @@ describe("#wordSearch()", function() {
       ['P', 'F', 'C', 'F', 'Q', 'U', 'A', 'L'],
       ['L', 'M', 'J', 'T', 'E', 'V', 'R', 'G'],
       ['E', 'H', 'C', 'S', 'Y', 'E', 'R', 'L'],
+      ['U', 'B', 'T', 'W', 'A', 'P', 'A', 'I'],
+      ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
+      ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
     ], 'APPLE')
 
     assert.isTrue(result);
