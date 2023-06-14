@@ -6,6 +6,7 @@ const wordSearch = function(letters, word) {
   //store colunm and row lengths in variables
   const rowsLength = letters.length;
   const colsLength = letters[0].length;
+  //use join() to change array element to string element so includes() can check for the letter combination horizontally later
   const horizontalJoin = letters.map(ls => ls.join(''));
   //create variable result as an empty array to collect transposed matrix
   let verticalResult = [];
@@ -15,7 +16,7 @@ const wordSearch = function(letters, word) {
     verticalResult[i] = [];
     //iteration of rows
     for (let j = 0; j < rowsLength; j++) {
-      //use join() to change array element to string element so includes() can check for the letter combination horizontally
+      //check for letter combination horizontally
       if (horizontalJoin[j].includes(word)) {
         return true;
       }
